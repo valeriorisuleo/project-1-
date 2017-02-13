@@ -1,3 +1,64 @@
-body{
+div.choosePlayer{
   background-color: red;
+  width: 100px;
+  height: 150px;
+  border: 1px solid black;
+  float: left;
+  margin: 3px;
+  background-position: center;
+  background-size: contain;
+}
+
+div#wrapper{
+  background-color: grey;
+  max-width: 1440px;
+  height: 768px;
+  margin: 0 auto;
+}
+
+div#selectBoard{
+  width: 750px;
+  height: 300px;
+  margin: 0 auto;
+}
+
+h1, h2{
+  text-align: center;
+}
+
+#vito{
+  background-image: url("../pics/players/vito.jpg");
+}
+#micheal{
+  background-image: url("../pics/players/Michaelcoreleone.jpg");
+}
+#clemenza{
+  background-image: url("../pics/players/Peter_Clemenza.jpg");
+}
+#tom{
+  background-image: url("../pics/players/vito.jpg");
+}
+#fredo{
+  background-image: url("../pics/players/vito.jpg");
+}
+#brasi{
+  background-image: url("../pics/players/vito.jpg");
+}
+#moe{
+  background-image: url("../pics/players/vito.jpg");
+}
+#solozzo{
+  background-image: url("../pics/players/vito.jpg");
+}
+#sonny{
+  background-image: url("../pics/players/vito.jpg");
+}
+#bonasera{
+  background-image: url("../pics/players/vito.jpg");
+}
+#kay{
+  background-image: url("../pics/players/vito.jpg");
+}
+#anthony{
+  background-image: url("../pics/players/vito.jpg");
 }
