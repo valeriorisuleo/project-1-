@@ -79,7 +79,9 @@ div.playerSelect:hover{
   position: absolute;
   border: 0;
   display: inline-block;
+  outline: 0;
 }
+
 .player1Hand, .player2Hand {
   width: 183px;
   height: 69px;
