@@ -1,8 +1,10 @@
+@import url('https://fonts.googleapis.com/css?family=Tangerine');
+
 *{box-sizing: border-box;
 }
 p{
   color: red;
-  font-family: 'LinotypeZapfino One', arial;
+  font-family: 'Tangerine', arial;
   font-size: 60px;
   /*padding: 1%;*/
   padding-left: 27%;
@@ -90,7 +92,7 @@ div.playerSelect:hover{
   margin-top: 18%;*/
   text-align: center;
   line-height: 69px;
-  font-family: 'LinotypeZapfino One', arial;
+  font-family: 'Tangerine', arial;
   font-size: 60px;
   margin-bottom: 20px;
 }
