@@ -149,25 +149,31 @@ $(()=>{
 
   function checkForGameOver() {
 
-  if (cards.length === 0) {
-    const player1Total = player1Deck.reduce((accumulator, currentValue)=>{
-      return accumulator + currentValue.value;
-    },0);
-    console.log('player one score', player1Total);
-    const player2Total = player2Deck.reduce((accumulator, currentValue)=>{
-      return accumulator + currentValue.value;
-    },0);
-    console.log('player two score', player2Total);
+    if (cards.length === 0) {
+      const player1Total = player1Deck.reduce((accumulator, currentValue)=>{
+        return accumulator + currentValue.value;
+      },0);
+      console.log('player one score', player1Total);
+      const player2Total = player2Deck.reduce((accumulator, currentValue)=>{
+        return accumulator + currentValue.value;
+      },0);
+      console.log('player two score', player2Total);
 
-    if (player1Total > player2Total) {
-      alert('You win!');
-    } else if (player2Total > player1Total) {
-      alert('Thanks Master');
-    } else{
-      alert('I wanna die!');
+      if (player1Total > player2Total) {
+        alert('You win!');
+      } else if (player2Total > player1Total) {
+        alert('Show me respect, kid!');
+      } else{
+        alert('I do not want to die!');
+      }
+      $player1Hand.text('Cpu');
+      $player2Hand.text('Player');
+      player1Deck = [];
+      player2Deck = [];
+      cardOne = null;
+      cardTwo = null;
+      refillDeck();
     }
-    refillDeck();
-  }
   }
 
 
