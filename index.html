@@ -4,32 +4,57 @@
     <meta charset="utf-8">
     <title></title>
     <link rel="stylesheet" href="css/style.css">
+    <link href="http://allfont.net/allfont.css?fonts=linotypezapfino-one" rel="stylesheet" type="text/css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js" charset="utf-8"></script>
     <script src="js/app.js" charset="utf-8"></script>
   </head>
   <body>
+    <div class="clearfix" id="wrapper">
 
-    <div id="wrapper">
+      <div class="theFamily">
 
-      <div id="selectBoard">
+<!-- $playerList = $('.playerSelect')
+$playerList.on('click', () => {
+  play audio clip
+}) -->
 
-        <div class="choosePlayer" id="vito">test</div>
-        <div class="choosePlayer" id="micheal">test</div>
-        <div class="choosePlayer" id="clemenza">test</div>
-        <div class="choosePlayer" id="tom">test</div>
-        <div class="choosePlayer" id="fredo">test</div>
-        <div class="choosePlayer" id="brasi">test</div>
-        <div class="choosePlayer" id="moe">test</div>
-        <div class="choosePlayer" id="sollozzo">test</div>
-        <div class="choosePlayer" id="sonny">test</div>
-        <div class="choosePlayer" id="bonasera">test</div>
-        <div class="choosePlayer" id="kay">test</div>
-        <div class="choosePlayer" id="anthony">test</div>
+        <div class="playerSelect" id="anthony">Anthony</div>
+        <div class="playerSelect" id="bonasera">Bonasera</div>
+        <div class="playerSelect" id="clemenza">Clemenza</div>
+        <div class="playerSelect" id="fredo">Fredo</div>
+        <div class="playerSelect" id="key">Kay</div>
+        <div class="playerSelect" id="luca">Luca</div>
+        <div class="playerSelect" id="micheal">Micheal</div>
+        <div class="playerSelect" id="moe">Moe</div>
+        <div class="playerSelect" id="sollozzo">Sollozzo</div>
+        <div class="playerSelect" id="sonny">Sonny</div>
+        <div class="playerSelect" id="tom">Tom</div>
+        <div class="playerSelect" id="vito">Vito</div>
       </div>
-      <h1>Steal My Deck</h1>
-      <h2>Godfather Version</h2>
-      <button type="button" name="button">Show Respect</button>
-    </div>
+      <p>Family: <span id="current"></span></p>
 
+      <button id="gameOn"></button>
+      <audio src="sounds/winchester.wav" class="audio"></audio>
+<!-- <div id="clearfix"> -->
+      <div class="cardContainer left">
+        <div class="player2Hand"></div>
+        <div class="cardDefault" id="rightDeck"></div>
+      </div>
+
+      <div class="cardContainer right">
+        <div class="player1Hand"></div>
+        <div class="cardDefault" id="leftDeck"></div>
+      </div>
+
+      <!-- <audio id="shotgunSound" src="sounds/Winchester.wav"></audio> -->
+      </div>
+
+    </div>
+  </div>
+  <audio controls autoplay>
+    <audio autoplay="true" src="sounds/soundtrack.mp3" type="audio/mpeg">
+Your browser does not support the audio element.
+</audio>
 
   </body>
 </html>
